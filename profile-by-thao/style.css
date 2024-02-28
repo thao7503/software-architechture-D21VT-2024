@@ -1,0 +1,163 @@
+/* NAVIGATION BAR */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px; /* Thêm padding nếu bạn muốn tạo khoảng cách xung quanh */
+  background-color: #451a03; /* Màu nền của thanh điều hướng */
+  color: #fff7ed; /* Màu văn bản */
+  font-family: "Courier New", Courier, monospace;
+}
+
+.nav ul {
+  list-style: none; /* Loại bỏ dấu chấm/bullet của danh sách */
+  padding: 0; /* Loại bỏ padding mặc định của danh sách */
+  margin: 0; /* Loại bỏ margin mặc định của danh sách */
+}
+
+.nav li {
+  display: inline-block; /* Hiển thị các mục liên kết cùng một hàng */
+  margin-right: 10px; /* Tạo khoảng cách giữa các mục liên kết */
+}
+
+.nav a {
+  text-decoration: none; /* Loại bỏ gạch chân dưới liên kết */
+  color: #fff7ed; /* Màu văn bản của liên kết */
+}
+
+.nav h1 {
+  margin: 0; /* Loại bỏ margin mặc định của tiêu đề */
+}
+
+@media (max-width: 1080px) {
+  .nav {
+    flex-direction: column;
+  }
+}
+
+/* MID
+.mid {
+}*/
+
+/* @media (max-width: 1080px) {
+  .mid {
+    display: flex;
+  }
+} */
+
+/* HEADER */
+
+.header {
+  height: 400px;
+  padding: 0 200px;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+.picture {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+#square {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  top: -150px;
+  background: #b2967d;
+  z-index: -1;
+}
+
+#circle {
+  width: 320px;
+  height: 320px;
+  background: #b2967d;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+}
+
+.avatar {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.avatar img {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+.name {
+  position: relative;
+  color: #624308;
+}
+
+@media (max-width: 1080px) {
+  .header {
+    top: 30px;
+    padding: 50px 100px 0 100px;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .name {
+    top: 70px;
+    text-align: center;
+  }
+  .picture {
+    top: 30px;
+  }
+}
+
+/* CONTENT */
+
+.content {
+  position: absolute;
+}
+
+h2 {
+  font-family: "Dancing Script", Helvetica;
+  font-size: 56px;
+  margin: 20px 0;
+}
+p {
+  font-family: "Archivo Narrow", system-ui;
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+h3 {
+  font-family: "Archivo Narrow", system-ui;
+  font-size: 32px;
+  margin-top: 24px;
+  margin-bottom: 10px;
+}
+
+ul {
+  font-family: "Archivo Narrow", system-ui;
+  font-size: 24px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/*  */
