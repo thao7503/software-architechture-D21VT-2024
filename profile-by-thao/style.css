@@ -114,11 +114,17 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
+  transition: 0.3s;
 }
 
 .name {
   position: relative;
   color: #624308;
+  transition: 0.3s;
+}
+.name :hover {
+  color: #fe6d6d;
+  transform: scale(120%);
 }
 
 @media (max-width: 1080px) {
@@ -163,13 +169,12 @@ body {
   float: left;
   margin: 0 0 2% 4.21052%;
   list-style: none;
-  box-shadow: 0 10px 30px #858585;
-  transition: 0.3s;
 }
 
-.main li:hover {
-  background-color: #ec7153;
-}
+/* .topic :hover {
+  background-color: #fcc4c4;
+  transform: scale(120%) rotate(-2deg);
+} */
 
 .content {
   display: flex;
