@@ -1,0 +1,24 @@
+.title {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}
+
+.member {
+    display: flex;
+    justify-content: center;
+}
+
+.member a {
+    margin: 0 10px; /* Adjust margin between images */
+}
+
+.member img {  
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* Make sure to set border-radius to 50% for circular images */
+     background-size: cover;
+}
+
