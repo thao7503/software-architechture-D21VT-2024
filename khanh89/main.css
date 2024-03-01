@@ -3,7 +3,72 @@ body{
     background-color: #f9f9f9;
 
 }
+
 p{
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
+}
+
+header {
+    padding: 20px 0;
+    background-color: greenyellow;
+    display: flex;
+
+}
+
+.img-container {
+    background-color: white;
+    padding: 4px;
+    padding-left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px ;
+}
+
+.tittle-container {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.tittle-container h1, .tittle-container h2 {
+    color: white;
+    font-size: 28px;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 32px;
+}
+
+.tittle-container h2 {
+    font-size: 22px;
+    color: #fafafa;
+    margin-top: 10px;
+}
+
+.img, .avatar {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+.container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    display: flex;
+
+}
+
+.sider, .content {
+    background-color: coral;
+    padding: 20px;
+}
+
+.sider {
+    width: calc(30% - 20px);
+    
+
 }
