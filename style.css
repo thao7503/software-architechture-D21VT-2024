@@ -1,24 +1,41 @@
 .title {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .member {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 
 .member a {
-    margin: 0 10px; /* Adjust margin between images */
+  margin: 0 10px; /* Adjust margin between images */
 }
 
-.member img {  
-    width: 200px;
-    height: 200px;
-    border-radius: 50%; /* Make sure to set border-radius to 50% for circular images */
-     background-size: cover;
+.member img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* Make sure to set border-radius to 50% for circular images */
+  background-size: cover;
+  box-shadow: 0 5px 10px #858585;
 }
 
+.KC {
+  padding-left: 30px;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+}
+
+.NPT {
+  width: 90%;
+  height: 90%;
+  object-fit: cover;
+  border-radius: 50%;
+  position: absolute;
+}
