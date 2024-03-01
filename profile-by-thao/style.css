@@ -141,11 +141,9 @@ body {
 .main {
   font-size: 24px;
   display: flex;
-  /* position: relative; */
   align-items: center;
   list-style: none;
   padding: 0;
-  justify-content: space-between;
   font-family: "Archivo Narrow", system-ui;
   position: relative;
   margin-bottom: 20px;
