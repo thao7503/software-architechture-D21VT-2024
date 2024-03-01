@@ -13,7 +13,8 @@
     rgba(255, 211, 204, 1) 56%,
     rgba(255, 117, 141, 1) 99%
   );
-  box-shadow: 3px 5px 5px #624308;
+  /* box-shadow: 3px 5px 5px #624308; */
+  box-shadow: 0 5px 10px #858585;
   border-radius: 10px;
   /* filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#e29b64",endColorstr="#fcb9c1",GradientType=1); */
   font-family: "Courier New", Courier, monospace;
@@ -26,6 +27,7 @@
 }
 
 .nav li {
+  font-weight: 700;
   display: inline-block; /* Hiển thị các mục liên kết cùng một hàng */
   margin-right: 10px; /* Tạo khoảng cách giữa các mục liên kết */
 }
@@ -38,6 +40,7 @@
 .nav h1 {
   margin: 0; /* Loại bỏ margin mặc định của tiêu đề */
   text-align: center;
+  font-weight: 1000;
 }
 
 .mid {
@@ -156,11 +159,16 @@ body {
   text-align: center;
   width: 300px;
   height: 220px;
-  display: inline-block;
+  display: block;
   float: left;
   margin: 0 0 2% 4.21052%;
   list-style: none;
-  /* gap: 50px; */
+  box-shadow: 0 10px 30px #858585;
+  transition: 0.3s;
+}
+
+.main li:hover {
+  background-color: #ec7153;
 }
 
 .content {
