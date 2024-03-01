@@ -26,8 +26,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top-right-radius: 100px;
-    border-bottom-right-radius:100px;
+    border-radius: 100%;
 }
 
 .title-container{
@@ -58,13 +57,12 @@ header{
 }
 
 .container{
-    padding:20px;
     background-color:whitesmoke;
   
 }
 
 .sider, .content{
-    width: calc(80%-10px)
+    width: calc(80%-10px);
     background-color: palegoldenrod;
     padding: 20px 0;
 }
