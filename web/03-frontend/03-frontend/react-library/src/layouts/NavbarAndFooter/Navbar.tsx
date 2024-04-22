@@ -16,7 +16,7 @@ export const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark main-color py-3">
       <div className="container-fluid">
-        <span className="navbar-brand">thư viện :)))</span>
+        <span className="navbar-brand font-weight-bold">Thư viện nào đó</span>
         <button
           className="navbar-toggler"
           type="button"
@@ -37,13 +37,13 @@ export const Navbar = () => {
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/search">
-                Search Books
+                Tìm kiếm
               </NavLink>
             </li>
             {authState.isAuthenticated && (
               <li className="nav-item">
                 <NavLink className="nav-link" to="/shelf">
-                  Shelf
+                  Danh sách sách mượn
                 </NavLink>
               </li>
             )}
@@ -51,7 +51,7 @@ export const Navbar = () => {
               authState.accessToken?.claims?.userType === "admin" && (
                 <li className="nav-item">
                   <NavLink className="nav-link" to="/admin">
-                    Admin
+                    (for) Admin (only)
                   </NavLink>
                 </li>
               )}
@@ -64,7 +64,7 @@ export const Navbar = () => {
                   className="btn btn-outline-light"
                   to="/login"
                 >
-                  Sign in
+                  Đăng nhập
                 </Link>
               </li>
             ) : (
@@ -73,7 +73,7 @@ export const Navbar = () => {
                   className="btn btn-outline-light"
                   onClick={handleLogout}
                 >
-                  Logout
+                  Đăng xuất
                 </button>
               </li>
             )}
